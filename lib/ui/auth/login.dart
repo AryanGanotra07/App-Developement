@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 LogoImage(),
                 _buildLoginForm(),
                 SubmitButton(_onSubmit, _valid),
-                // _buildConsumerForAuthenticationState(),
+                _buildConsumerForAuthenticationState(),
               ],
             ),
           ),
@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
             return LoadingComponent(height : null);
           case AuthResponseStatus.Error:
             return Error(
-              errorMessage: authResponse.message,
+              errorException: authResponse.exception,
               showRetryButton: false,
               onRetry: () => null,
               height: null,

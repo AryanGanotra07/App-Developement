@@ -36,6 +36,13 @@ class _RecommendedGamesState extends State<RecommendedGames> {
     Provider.of<RecommendedGamesProvider>(context, listen: false).loadGamesInfo();
   }
 
+  void _refreshRecommendedGames() {
+    Provider.of<RecommendedGamesProvider>(context, listen: false).refreshGamesInfo();
+    setState(() {
+
+    });
+  }
+
 
   double _prevMaxScrollExtend = 0;
   void pagination() {
@@ -46,7 +53,7 @@ class _RecommendedGamesState extends State<RecommendedGames> {
     //     Provider.of<RecommendedGamesProvider>(context, listen: false).loadMore();
     //
     // }
-    if (currentMaxScrollExtend == currentMaxScrollExtend) {
+    if (currentScrollExtent == currentMaxScrollExtend) {
       Provider.of<RecommendedGamesProvider>(context, listen: false).loadMore();
     }
   }
@@ -64,7 +71,7 @@ class _RecommendedGamesState extends State<RecommendedGames> {
         children: [
           _buildTitle(),
           _buildGamesInfoConsumerWidget(),
-          LinearProgressIndicator(),
+
         ],
       ),
     );
@@ -76,14 +83,14 @@ class _RecommendedGamesState extends State<RecommendedGames> {
       builder: (context, data, child) {
         GameResponse gamesInfo = data.response;
         switch(gamesInfo.status) {
-          case GameResponseStatus.Fetching:
-            return LoadingComponent();
+          // case GameResponseStatus.Fetching:
+          //   return LoadingComponent();
           case GameResponseStatus.Fetched:
             return _buildGamesListWidget(gamesInfo.games);
           case GameResponseStatus.Error:
             return Error(
-              errorMessage: gamesInfo.message,
-              onRetry: () => _fetchRecommendedGames(),
+              errorException: gamesInfo.exception,
+              onRetry: () => _refreshRecommendedGames(),
             );
           default:
             return LoadingComponent();
@@ -120,6 +127,11 @@ class _RecommendedGamesState extends State<RecommendedGames> {
             return GameCard(gameInfo);
           },
         ),
+          Positioned.fill(
+            child: Align(
+              alignment: Alignment.bottomCenter,
+                child: LinearProgressIndicator()),
+          ),
       ]
       ),
     );

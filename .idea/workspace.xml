@@ -20,57 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e350e90-4f68-480f-91dd-4dbffb8aa03e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/models/auth/auth.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/user/tournament_info.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/user/user.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/auth/auth_response.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/auth/auth_response_status.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/games/game_response.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/games/game_response_status.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/games/recommended_games_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/user/user_provider.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/user/user_response.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/user/user_response_status.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/games/recommended_games_service.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/user/user_service.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/utils/exception_handler.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/utils/response_handler.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/splash/index.js.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/splash/splash.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/error/error.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/error/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/loading/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/widgets/loading/loading.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/constants/service_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants/service_constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/user_preferences.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/user_preferences.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/gameinfo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/games/gameinfo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/user.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/providers/auth_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/providers/user_provider.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/auth_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/auth/auth_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/recommended_games_service.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/themes/app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/auth/auth_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/games/game_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/games/game_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/games/recommended_games_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/games/recommended_games_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/user/user_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/user/user_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/user/user_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/user/user_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/user/user_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/user/user_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/utils/response_handler.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/utils/response_handler.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/logo_image/logo_image.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/logo_image/logo_image.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/password_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/password_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/submit_button/submit_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/submit_button/submit_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/username_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/username_field.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/dashboard.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/game_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/game_card.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/recommended_games.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/recommended_games.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/tournaments_details/index.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/tournaments_details/tournaments_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/tournaments_details.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/user_profile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/snackbar_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/snackbar_util.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/drawer/drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/drawer/drawer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/error/error.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/error/error.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,29 +108,29 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="258" key="GridCell.Tab.0.bottom" timestamp="1630239107243">
+    <state width="1398" height="280" key="GridCell.Tab.0.bottom" timestamp="1630246952658">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1630239107243" />
+    <state width="1398" height="280" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1630246952658" />
     <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1630134025884" />
-    <state width="1398" height="258" key="GridCell.Tab.0.center" timestamp="1630239107242">
+    <state width="1398" height="280" key="GridCell.Tab.0.center" timestamp="1630246952657">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1630239107242" />
+    <state width="1398" height="280" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1630246952657" />
     <state width="1398" height="205" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1630134025884" />
-    <state width="1398" height="258" key="GridCell.Tab.0.left" timestamp="1630239107242">
+    <state width="1398" height="280" key="GridCell.Tab.0.left" timestamp="1630246952657">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1630239107242" />
+    <state width="1398" height="280" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1630246952657" />
     <state width="1398" height="205" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1630134025884" />
-    <state width="1398" height="258" key="GridCell.Tab.0.right" timestamp="1630239107243">
+    <state width="1398" height="280" key="GridCell.Tab.0.right" timestamp="1630246952658">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state width="1398" height="258" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1630239107243" />
+    <state width="1398" height="280" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1630246952658" />
     <state width="1398" height="205" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1630134025884" />
-    <state x="385" y="168" width="670" height="676" key="search.everywhere.popup" timestamp="1630234687702">
+    <state x="385" y="168" width="670" height="676" key="search.everywhere.popup" timestamp="1630241616018">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state x="385" y="168" width="670" height="676" key="search.everywhere.popup/0.25.1440.819@0.25.1440.819" timestamp="1630234687702" />
+    <state x="385" y="168" width="670" height="676" key="search.everywhere.popup/0.25.1440.819@0.25.1440.819" timestamp="1630241616018" />
   </component>
 </project>

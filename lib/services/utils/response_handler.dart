@@ -16,7 +16,7 @@ class ResponseHandler {
       case 404:
         throw ResourceNotFoundException(USER_NOT_FOUND);
       case 401:
-        throw UnauthorisedException(INVALID_CREDENTIALS);
+        throw InvalidInputException(INVALID_CREDENTIALS);
       case 403:
         throw UnauthorisedException(UNAUTHORIZED_ACCESS);
       case 400:

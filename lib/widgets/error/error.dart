@@ -1,12 +1,35 @@
+import 'package:bluestacks/providers/auth/auth_provider.dart';
+import 'package:bluestacks/services/utils/exception_handler.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 
-class Error extends StatelessWidget {
-  Function onRetry;
-  String errorMessage;
-  bool showRetryButton = true;
-  double height = 200;
-  Error({this.errorMessage, this.onRetry, this.showRetryButton = true, this.height = 200});
+class Error extends StatefulWidget {
+  final Function onRetry;
+  final Exception errorException;
+  final bool showRetryButton;
+  final double height;
+  Error({this.errorException, this.onRetry, this.showRetryButton = true, this.height = 200});
+
+  @override
+  _ErrorState createState() => _ErrorState();
+}
+
+class _ErrorState extends State<Error> {
+
+
+  @override
+  void initState() {
+    super.initState();
+    _logoutIfUnauthorized();
+  }
+
+  void _logoutIfUnauthorized() {
+    if (widget.errorException is UnauthorisedException) {
+      Provider.of<AuthProvider>(context, listen: false).logoutUser();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return _errorHandleWidget();
@@ -14,7 +37,7 @@ class Error extends StatelessWidget {
 
   Widget _errorHandleWidget() {
     return Container(
-          height: height,
+          height: widget.height,
           alignment: Alignment.center,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
@@ -24,12 +47,12 @@ class Error extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text(errorMessage),
+                    child: Text(widget.errorException.toString()),
                   ),
-                  showRetryButton?
+                  widget.showRetryButton?
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: ElevatedButton(onPressed: onRetry, child: Text("Retry")),
+                    child: ElevatedButton(onPressed: widget.onRetry, child: Text("Retry")),
                   ) : SizedBox(
                     width: 0,
                     height: 0,
@@ -40,5 +63,4 @@ class Error extends StatelessWidget {
           ),
         );
   }
-
 }

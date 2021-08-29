@@ -9,10 +9,11 @@ class GameCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _buildGameCard();
+    return _buildGameCard(context);
   }
 
-  Widget _buildGameCard() {
+  Widget _buildGameCard(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Container(
       margin: EdgeInsets.only(bottom: 8.0),
       decoration: BoxDecoration(
@@ -30,9 +31,12 @@ class GameCard extends StatelessWidget {
       borderRadius: BorderRadius.circular(20.0),
       child: Stack(
           children : [
-            FadeInImage.assetNetwork(
-                placeholder: 'assets/images/template.jpg',
-                image :gameInfo.coverUrl, fit: BoxFit.fitWidth, width: double.infinity,),
+            Padding(
+              padding: const EdgeInsets.only(bottom : 1.0),
+              child: Image.network(
+                  // placeholder: 'assets/images/template.jpg',
+                  gameInfo.coverUrl, fit: BoxFit.fitWidth, width: double.infinity,),
+            ),
 
       Positioned.fill(
 

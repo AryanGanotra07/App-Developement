@@ -7,12 +7,12 @@ class GameResponse {
   GameResponseStatus status;
   List<GameInfo> games;
   String cursor;
-  String message;
+  Exception exception;
 
   GameResponse({
     this.status,
     this.games,
-    this.message,
+    this.exception,
     this.cursor,
   });
 }

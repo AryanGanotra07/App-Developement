@@ -4,6 +4,7 @@ import 'package:bluestacks/models/user/user.dart';
 import 'package:bluestacks/providers/user/user_response.dart';
 import 'package:bluestacks/providers/user/user_response_status.dart';
 import 'package:bluestacks/services/user/user_service.dart';
+import 'package:bluestacks/services/utils/exception_handler.dart';
 import 'package:flutter/material.dart';
 
 class UserProvider extends ChangeNotifier {
@@ -20,9 +21,9 @@ class UserProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void _setError(String error) {
+  void _setError(Exception exception) {
     _response.status = UserResponseStatus.Error;
-    _response.message = error;
+    _response.exception = exception;
     notifyListeners();
   }
 
@@ -32,25 +33,24 @@ class UserProvider extends ChangeNotifier {
     );
   }
 
-  void _setFetching() {
+  void _setFetching({notify : false}) {
     _response.status = UserResponseStatus.Fetching;
-    notifyListeners();
+    // if (notify)
+    //   notifyListeners();
   }
 
-  Future<void> loadUser() async {
+  Future<void> loadUser({forcefully : false}) async {
     if (_response.user != null) {
-      notifyListeners();
+      // notifyListeners();
       return;
     }
-    AuthDetails userAuthFromLocalStorage = await UserPreferences.getUser();
-    if (userAuthFromLocalStorage != null) {
-      _setFetching();
+    if ((_response.status != UserResponseStatus.Error) || forcefully) {
+      _setFetching(notify: true);
       try {
-        User userFromNetwork = await UserService.getUserDetails(
-            userAuthFromLocalStorage.userId);
+        User userFromNetwork = await UserService.getUserDetails();
         _setUser(userFromNetwork);
       } catch (e) {
-        _setError(e.toString());
+        _setError(e);
       }
     }
   }

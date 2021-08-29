@@ -26,16 +26,16 @@ class RecommendedGamesProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void _setError(String message) {
+  void _setError(Exception exception) {
     _response.status = GameResponseStatus.Error;
-    _response.message = message;
+    _response.exception = exception;
     notifyListeners();
   }
 
-  void _setFetching({ notify : true }) {
+  void _setFetching({ notify : false}) {
     _response.status = GameResponseStatus.Fetching;
-    if (notify)
-      notifyListeners();
+    // if (notify)
+    //   notifyListeners();
   }
 
 
@@ -44,8 +44,7 @@ class RecommendedGamesProvider extends ChangeNotifier {
     if (_response.games == null) {
       try {
 
-        _response.status = GameResponseStatus.Fetching;
-        notifyListeners();
+        _setFetching();
 
         Map<String, dynamic> response = await RecommendedGamesService
             .fetchRecommendedGames(null);
@@ -56,7 +55,7 @@ class RecommendedGamesProvider extends ChangeNotifier {
         _setGames(games, cursor);
 
       } catch (e) {
-        _setError(e.toString());
+        _setError(e);
       }
       return;
     }
@@ -71,7 +70,7 @@ class RecommendedGamesProvider extends ChangeNotifier {
   Future<void> loadMore() async {
     try {
 
-      _response.status = GameResponseStatus.Fetching;
+      _setFetching();
       Map<String, dynamic> response = await RecommendedGamesService
           .fetchRecommendedGames(
           _response.cursor != null ? _response.cursor : null
@@ -84,13 +83,13 @@ class RecommendedGamesProvider extends ChangeNotifier {
         _addGames(games, cursor);
       }
     } catch (e) {
-     _setError(e.toString());
+     _setError(e);
     }
   }
 
   Future<void> refreshGamesInfo() async {
     try {
-      _setFetching();
+      _setFetching(notify: true);
       Map<String, dynamic> response = await RecommendedGamesService
           .fetchRecommendedGames(null);
 
@@ -100,7 +99,7 @@ class RecommendedGamesProvider extends ChangeNotifier {
       _setGames(games, cursor);
       notifyListeners();
     } catch(e) {
-      _setError(e.toString());
+      _setError(e);
     }
   }
 

@@ -25,6 +25,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
     super.initState();
   }
 
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -40,7 +42,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             // Use a delegate to build items as they're scrolled on screen.
             delegate: SliverChildListDelegate(
                 [
-                  // UserProfile(),
+                  UserProfile(),
                   RecommendedGames(_scrollController),
                 ]
             ),

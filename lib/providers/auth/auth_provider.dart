@@ -47,9 +47,9 @@ class AuthProvider extends ChangeNotifier {
     else _setLoggedIn();
   }
 
-  void _setError(String error) {
+  void _setError(Exception exception) {
     _authResponse.authStatus = AuthResponseStatus.Error;
-    _authResponse.message = error;
+    _authResponse.exception = exception;
     notifyListeners();
   }
 
@@ -61,7 +61,7 @@ class AuthProvider extends ChangeNotifier {
         _setAuthDetails(userAuth);
       }
     } catch (e) {
-      _setError(e.toString());
+      _setError(e);
     }
   }
 
