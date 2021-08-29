@@ -19,12 +19,11 @@ class CustomButtonTheme {
             backgroundColor: Colors.black,
             shadowColor: Colors.black,
             padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10)),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             textStyle: TextStyle(
               color: Colors.white,
               fontSize: 20,
             )));
   }
-
 }

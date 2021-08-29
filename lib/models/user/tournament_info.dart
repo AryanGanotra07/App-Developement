@@ -1,14 +1,8 @@
-
-
 class TournamentInfo {
   int played;
   int won;
 
-
-  TournamentInfo({
-    this.played,
-    this.won
-});
+  TournamentInfo({this.played, this.won});
 
   factory TournamentInfo.fromJson(Map<String, dynamic> responseData) {
     return new TournamentInfo(

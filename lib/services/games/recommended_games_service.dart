@@ -1,11 +1,14 @@
-import 'package:http/http.dart' as http;
 import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+
 import '../../models/games/index.dart';
 import '../utils/response_handler.dart';
 import '../utils/service_constants.dart';
 
 class RecommendedGamesService {
-  static Future<Map<String, dynamic>> fetchRecommendedGames(String cursor) async {
+  static Future<Map<String, dynamic>> fetchRecommendedGames(
+      String cursor) async {
     String baseUrl = Constants.GAMES_BASE_URL;
 
     if (cursor != null) {
@@ -18,13 +21,12 @@ class RecommendedGamesService {
       List<GameInfo> gamesInfo = List<GameInfo>.from(
           json["data"]["tournaments"].map((x) => GameInfo.fromJson(x)));
       return {
-        "games" : gamesInfo,
-        "cursor" : json["data"]["cursor"],
+        "games": gamesInfo,
+        "cursor": json["data"]["cursor"],
       };
     } else {
       ResponseHandler.handleStatusCode(response.statusCode);
     }
     return null;
   }
-
 }

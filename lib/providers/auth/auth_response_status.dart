@@ -1,5 +1,3 @@
-
-
 enum AuthResponseStatus {
   CheckingFromLocal,
   Authenticating,

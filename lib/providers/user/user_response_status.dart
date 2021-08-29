@@ -1,8 +1,1 @@
-
-
-enum UserResponseStatus {
-  Fetching,
-  Fetched,
-  Error,
-  NotFetching
-}
+enum UserResponseStatus { Fetching, Fetched, Error, NotFetching }

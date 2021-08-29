@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../providers/auth/index.dart';
+import 'auth/index.dart';
 import 'dashboard/index.dart';
 import 'splash/index.js.dart';
-import 'auth/index.dart';
-
 
 class Home extends StatefulWidget {
   @override
@@ -12,13 +12,10 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
-
   @override
   void initState() {
     Provider.of<AuthProvider>(context, listen: false).loadAuthStatus();
     super.initState();
-
   }
 
   @override
@@ -27,20 +24,20 @@ class _HomeState extends State<Home> {
   }
 
   Widget _getLandingWidget() {
-   return Consumer<AuthProvider>(
-     builder: (context, data, child) {
-       AuthResponse authResponse = data.authResponse;
-       switch(authResponse.authStatus) {
-         case AuthResponseStatus.CheckingFromLocal:
-           return SplashScreen();
-         case AuthResponseStatus.LoggedOut:
-           return LoginScreen();
-         case AuthResponseStatus.LoggedIn:
-           return DashboardScreen();
-        default:
-          return LoginScreen();
-       }
-     },
-   );
+    return Consumer<AuthProvider>(
+      builder: (context, data, child) {
+        AuthResponse authResponse = data.authResponse;
+        switch (authResponse.authStatus) {
+          case AuthResponseStatus.CheckingFromLocal:
+            return SplashScreen();
+          case AuthResponseStatus.LoggedOut:
+            return LoginScreen();
+          case AuthResponseStatus.LoggedIn:
+            return DashboardScreen();
+          default:
+            return LoginScreen();
+        }
+      },
+    );
   }
 }

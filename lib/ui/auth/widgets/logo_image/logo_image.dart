@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class LogoImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -9,7 +8,7 @@ class LogoImage extends StatelessWidget {
       child: _buildLogoImage(),
     );
   }
-  
+
   Widget _buildLogoImage() {
     return Image.asset(
       "assets/images/gametv.png",
@@ -18,5 +17,4 @@ class LogoImage extends StatelessWidget {
       width: 120,
     );
   }
-  
 }

@@ -5,12 +5,8 @@ class CustomAppBarTheme {
     return AppBarTheme(
       backgroundColor: Colors.white,
       centerTitle: true,
-      titleTextStyle: TextStyle(
-          color: Colors.black
-      ),
-      iconTheme: IconThemeData(
-          color: Colors.black
-      ),
+      titleTextStyle: TextStyle(color: Colors.black),
+      iconTheme: IconThemeData(color: Colors.black),
     );
   }
 }

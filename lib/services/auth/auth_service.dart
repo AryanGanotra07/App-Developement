@@ -1,15 +1,14 @@
 import '../../models/auth/auth.dart';
 import '../utils/response_handler.dart';
 
-
 class AuthService {
   static Map<String, dynamic> _allowedUsers = {
-    "9898989898" : "password123",
-    "9876543210" : "password123",
-    "9999" : "abcd",
+    "9898989898": "password123",
+    "9876543210": "password123",
+    "9999": "abcd",
   };
-  static Future<AuthDetails> loginUser(Map<String, dynamic> userData) async {
 
+  static Future<AuthDetails> loginUser(Map<String, dynamic> userData) async {
     String username = userData["username"].toString().trim();
     String password = userData["password"].toString().trim();
 
@@ -22,10 +21,10 @@ class AuthService {
 
         //sample response data
         Map<String, dynamic> responseData = {
-          "userId" : 1,
-          "phone" : username,
-          "accessToken" : "access_token",
-          "refreshToken" : "refresh_token",
+          "userId": 1,
+          "phone": username,
+          "accessToken": "access_token",
+          "refreshToken": "refresh_token",
         };
         return AuthDetails.fromAuthJson(responseData);
       } else {

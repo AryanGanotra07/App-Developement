@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../../providers/auth/index.dart';
 import '../../providers/games/index.dart';
 import '../../providers/user/index.dart';
-
-
 
 class CustomDrawer extends StatelessWidget {
   @override
@@ -20,14 +19,12 @@ class CustomDrawer extends StatelessWidget {
           children: [
             ListTile(
               title: const Text('Settings'),
-              onTap: () {
-
-              },
+              onTap: () {},
             ),
             ListTile(
               title: const Text('Logout'),
               onTap: () {
-               _logout(context);
+                _logout(context);
               },
             ),
           ],
@@ -41,5 +38,4 @@ class CustomDrawer extends StatelessWidget {
     Provider.of<RecommendedGamesProvider>(context, listen: false).clear();
     Provider.of<AuthProvider>(context, listen: false).logoutUser();
   }
-
 }

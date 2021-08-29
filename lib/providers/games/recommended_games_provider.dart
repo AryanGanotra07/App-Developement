@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+
 import '../../models/games/index.dart';
 import '../../services/games/index.dart';
 import 'game_response.dart';
 import 'game_response_status.dart';
-
 
 class RecommendedGamesProvider extends ChangeNotifier {
   GameResponse _response = new GameResponse(
@@ -11,7 +11,6 @@ class RecommendedGamesProvider extends ChangeNotifier {
   );
 
   GameResponse get response => _response;
-
 
   void _setGames(List<GameInfo> games, String cursor) {
     _response.games = games;
@@ -33,28 +32,24 @@ class RecommendedGamesProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  void _setFetching({ notify : false}) {
+  void _setFetching({notify: false}) {
     _response.status = GameResponseStatus.Fetching;
     // if (notify)
     //   notifyListeners();
   }
 
-
   Future<void> loadGamesInfo() async {
-
     if (_response.games == null) {
       try {
-
         _setFetching();
 
-        Map<String, dynamic> response = await RecommendedGamesService
-            .fetchRecommendedGames(null);
+        Map<String, dynamic> response =
+            await RecommendedGamesService.fetchRecommendedGames(null);
 
         String cursor = response["cursor"];
         List<GameInfo> games = response["games"];
 
         _setGames(games, cursor);
-
       } catch (e) {
         _setError(e);
       }
@@ -62,6 +57,7 @@ class RecommendedGamesProvider extends ChangeNotifier {
     }
     notifyListeners();
   }
+
   void clear() {
     _response = new GameResponse(
       status: GameResponseStatus.NotFetching,
@@ -70,12 +66,10 @@ class RecommendedGamesProvider extends ChangeNotifier {
 
   Future<void> loadMore() async {
     try {
-
       _setFetching();
-      Map<String, dynamic> response = await RecommendedGamesService
-          .fetchRecommendedGames(
-          _response.cursor != null ? _response.cursor : null
-      );
+      Map<String, dynamic> response =
+          await RecommendedGamesService.fetchRecommendedGames(
+              _response.cursor != null ? _response.cursor : null);
       String cursor = response["cursor"];
       List<GameInfo> games = response["games"];
       if (_response.games == null) {
@@ -84,25 +78,23 @@ class RecommendedGamesProvider extends ChangeNotifier {
         _addGames(games, cursor);
       }
     } catch (e) {
-     _setError(e);
+      _setError(e);
     }
   }
 
   Future<void> refreshGamesInfo() async {
     try {
       _setFetching(notify: true);
-      Map<String, dynamic> response = await RecommendedGamesService
-          .fetchRecommendedGames(null);
+      Map<String, dynamic> response =
+          await RecommendedGamesService.fetchRecommendedGames(null);
 
       String cursor = response["cursor"];
       List<GameInfo> games = response["games"];
 
       _setGames(games, cursor);
       notifyListeners();
-    } catch(e) {
+    } catch (e) {
       _setError(e);
     }
   }
-
-
 }

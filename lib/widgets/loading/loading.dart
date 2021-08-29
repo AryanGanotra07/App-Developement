@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
-
 class LoadingComponent extends StatelessWidget {
   final double height;
+
   LoadingComponent({this.height = 200});
+
   @override
   Widget build(BuildContext context) {
     return _buildLoadingWidget();
@@ -15,5 +16,4 @@ class LoadingComponent extends StatelessWidget {
         alignment: Alignment.center,
         child: CircularProgressIndicator());
   }
-
 }

@@ -1,9 +1,1 @@
-
-
-
-enum GameResponseStatus {
-  Fetching,
-  Fetched,
-  Error,
-  NotFetching
-}
+enum GameResponseStatus { Fetching, Fetched, Error, NotFetching }

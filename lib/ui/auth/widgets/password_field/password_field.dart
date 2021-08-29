@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+
 import '../../utils/error_messages.dart';
-
-
 
 class PasswordField extends StatefulWidget {
   final TextEditingController passwordController;
+
   PasswordField(this.passwordController);
 
   @override
@@ -44,9 +44,7 @@ class _PasswordFieldState extends State<PasswordField> {
   Widget _buildTogglePasswordVisibilityButton() {
     return IconButton(
       icon: Icon(
-        _passwordVisible
-            ? Icons.visibility
-            : Icons.visibility_off,
+        _passwordVisible ? Icons.visibility : Icons.visibility_off,
       ),
       onPressed: _togglePasswordVisibility,
     );
@@ -59,17 +57,14 @@ class _PasswordFieldState extends State<PasswordField> {
   }
 
   String _passwordValidator(String value) {
-
     value = value.trim();
 
-    if (value.isEmpty)
-      return ErrorMessages.FIELD_EMPTY_ERROR;
+    if (value.isEmpty) return ErrorMessages.FIELD_EMPTY_ERROR;
 
     if (value.length < 3 || value.length > 11) {
       return ErrorMessages.FIELD_INVALID_ERROR;
     }
 
     return null;
-
   }
 }

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'widgets/index.dart';
+
 import '../../widgets/drawer/index.dart';
 import '../../widgets/header/index.dart';
-
-
-
+import 'widgets/index.dart';
 
 class DashboardScreen extends StatefulWidget {
   static final String route = "/dashboard";
@@ -22,11 +20,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
     super.initState();
   }
 
-
-
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       key: _scaffoldKey,
       drawer: CustomDrawer(),
@@ -35,19 +30,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
         slivers: [
           Header(_openDrawer),
           SliverList(
-
             // Use a delegate to build items as they're scrolled on screen.
-            delegate: SliverChildListDelegate(
-                [
-                  UserProfile(),
-                  RecommendedGames(_scrollController),
-                ]
-            ),
+            delegate: SliverChildListDelegate([
+              UserProfile(),
+              RecommendedGames(_scrollController),
+            ]),
           ),
         ],
       ),
     );
-
   }
 
   void _openDrawer() {

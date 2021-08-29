@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-
 class Header extends StatelessWidget {
   final Function openDrawer;
+
   Header(this.openDrawer);
 
   @override
@@ -23,9 +23,7 @@ class Header extends StatelessWidget {
       onTap: () => _onDrawerIconPressed(context),
       child: Padding(
         padding: const EdgeInsets.all(12.0),
-        child: Image.asset(
-          "assets/images/drawericon.png"
-        ),
+        child: Image.asset("assets/images/drawericon.png"),
       ),
     );
   }
@@ -33,5 +31,4 @@ class Header extends StatelessWidget {
   void _onDrawerIconPressed(BuildContext context) {
     this.openDrawer();
   }
-
 }

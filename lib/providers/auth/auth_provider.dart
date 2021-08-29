@@ -1,19 +1,14 @@
 import 'package:flutter/material.dart';
+
 import '../../data/user/user_preferences.dart';
 import '../../models/auth/index.dart';
 import '../../services/auth/index.dart';
 import 'auth_response.dart';
 import 'auth_response_status.dart';
 
-
-
-
-
 class AuthProvider extends ChangeNotifier {
-
-  AuthResponse _authResponse = new AuthResponse(
-      authStatus: AuthResponseStatus.CheckingFromLocal
-  );
+  AuthResponse _authResponse =
+      new AuthResponse(authStatus: AuthResponseStatus.CheckingFromLocal);
 
   AuthResponse get authResponse => _authResponse;
 
@@ -39,8 +34,10 @@ class AuthProvider extends ChangeNotifier {
 
   Future<void> loadAuthStatus() async {
     AuthDetails user = await UserPreferences.getUser();
-    if (user == null) _setLoggedOut();
-    else _setLoggedIn();
+    if (user == null)
+      _setLoggedOut();
+    else
+      _setLoggedIn();
   }
 
   void _setError(Exception exception) {
@@ -67,5 +64,4 @@ class AuthProvider extends ChangeNotifier {
     _authResponse.userAuth = null;
     notifyListeners();
   }
-
 }

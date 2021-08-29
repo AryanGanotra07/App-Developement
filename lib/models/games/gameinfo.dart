@@ -1,16 +1,9 @@
-
-
 class GameInfo {
   String name;
   String coverUrl;
   String gameName;
 
-  GameInfo({
-    this.coverUrl,
-    this.name,
-    this.gameName
-});
-
+  GameInfo({this.coverUrl, this.name, this.gameName});
 
   factory GameInfo.fromJson(responseData) {
     // responseData = responseData["data"]["tournaments"];

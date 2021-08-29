@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
+
 import '../../models/user/index.dart';
 import '../../services/user/index.dart';
 import 'user_response.dart';
 import 'user_response_status.dart';
 
 class UserProvider extends ChangeNotifier {
-
-  UserResponse _response = UserResponse(
-    status: UserResponseStatus.NotFetching
-  );
+  UserResponse _response = UserResponse(status: UserResponseStatus.NotFetching);
 
   UserResponse get userResponse => _response;
 
@@ -25,18 +23,16 @@ class UserProvider extends ChangeNotifier {
   }
 
   void clear() {
-    _response = UserResponse(
-        status: UserResponseStatus.NotFetching
-    );
+    _response = UserResponse(status: UserResponseStatus.NotFetching);
   }
 
-  void _setFetching({notify : false}) {
+  void _setFetching({notify: false}) {
     _response.status = UserResponseStatus.Fetching;
     // if (notify)
     //   notifyListeners();
   }
 
-  Future<void> loadUser({forcefully : false}) async {
+  Future<void> loadUser({forcefully: false}) async {
     if (_response.user != null) {
       // notifyListeners();
       return;

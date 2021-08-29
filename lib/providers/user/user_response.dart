@@ -1,5 +1,3 @@
-
-
 import '../../models/user/user.dart';
 import 'user_response_status.dart';
 

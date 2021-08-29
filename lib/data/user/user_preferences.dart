@@ -6,7 +6,6 @@ class UserPreferences {
   static const String ACCESS_TOKEN_KEY = "access_token";
   static const String REFRESH_TOKEN_KEY = "refresh_token";
 
-
   static Future<void> saveUserAuth(AuthDetails userAuth) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.setInt(USER_ID_KEY, userAuth.userId);
@@ -21,18 +20,14 @@ class UserPreferences {
     String accessToken = prefs.getString(ACCESS_TOKEN_KEY);
     String refreshToken = prefs.getString(REFRESH_TOKEN_KEY);
 
-    if (int == null ||
-        accessToken == null ||
-        refreshToken == null) {
-
+    if (int == null || accessToken == null || refreshToken == null) {
       return null;
-
     }
     return AuthDetails(
-        userId: userId,
-        accessToken: accessToken,
-        refreshToken: refreshToken,
-        );
+      userId: userId,
+      accessToken: accessToken,
+      refreshToken: refreshToken,
+    );
   }
 
   static Future<void> removeUser() async {

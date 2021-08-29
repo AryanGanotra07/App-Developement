@@ -20,39 +20,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e350e90-4f68-480f-91dd-4dbffb8aa03e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/models/auth/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/games/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/user/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/index.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/user/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/user/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/user/user_preferences.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/user/user_preferences.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/generated_plugin_registrant.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/auth/auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/auth/auth.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/auth/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/auth/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/games/gameinfo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/games/gameinfo.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/games/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/games/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/user/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/user/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/models/user/tournament_info.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/user/tournament_info.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/providers/auth/auth_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/auth/auth_response_status.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_response_status.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/auth/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/providers/games/game_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/games/game_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/games/game_response_status.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/games/game_response_status.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/games/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/games/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/providers/games/recommended_games_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/games/recommended_games_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/user/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/user/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/providers/user/user_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/user/user_provider.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/providers/user/user_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/user/user_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/user/user_response_status.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/user/user_response_status.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/routes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/routes.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/auth/auth_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/auth/auth_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/auth/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/auth/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/games/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/games/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/games/recommended_games_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/games/recommended_games_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/user/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/user/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/user/user_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/user/user_service.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/utils/response_handler.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/utils/response_handler.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/utils/service_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/utils/service_constants.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/themes/app_bar/app_bar_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_bar/app_bar_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/app_bar/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_bar/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/themes/app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/themes/button/button_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/button/button_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/button/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/button/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/text/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/text/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/themes/text/text_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/text/text_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/login.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/utils/error_messages.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/utils/error_messages.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/logo_image/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/logo_image/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/logo_image/logo_image.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/logo_image/logo_image.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/password_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/password_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/submit_button/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/submit_button/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/submit_button/submit_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/submit_button/submit_button.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/username_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/username_field.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/dashboard.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/game_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/game_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/recommended_games.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/recommended_games.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/tournaments_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/tournaments_details.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/user_profile.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/splash/index.js.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/splash/index.js.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/splash/splash.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/splash/splash.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/snackbar_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/snackbar_util.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/widgets/drawer/drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/drawer/drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/drawer/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/drawer/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/widgets/error/error.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/error/error.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/error/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/error/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/header/header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/header/header.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/header/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/header/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/index.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/loading/index.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/loading/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/widgets/loading/loading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/loading/loading.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +121,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
@@ -85,11 +129,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/data/user" />
       <recent name="$PROJECT_DIR$/lib/ui/auth/utils" />
       <recent name="$PROJECT_DIR$/lib/ui/auth" />
       <recent name="$PROJECT_DIR$/lib/services/utils" />
       <recent name="$PROJECT_DIR$/lib/themes/text" />
-      <recent name="$PROJECT_DIR$/lib/themes/button" />
     </key>
   </component>
   <component name="RunManager">
