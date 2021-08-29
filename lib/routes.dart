@@ -1,5 +1,4 @@
 import 'package:bluestacks/ui/dashboard/index.dart';
-import 'package:bluestacks/ui/home.dart';
 import 'package:bluestacks/ui/splash/index.js.dart';
 import 'package:flutter/material.dart';
 import 'ui/auth/index.dart';

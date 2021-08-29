@@ -1,13 +1,7 @@
-import 'package:bluestacks/models/user/user.dart';
-import 'package:bluestacks/providers/auth/auth_provider.dart';
-import 'package:bluestacks/providers/auth/auth_response.dart';
-import 'package:bluestacks/providers/auth/auth_response_status.dart';
-import 'package:bluestacks/providers/user/user_provider.dart';
+import 'package:bluestacks/providers/auth/index.dart';
 import 'package:bluestacks/ui/auth/widgets/index.dart';
-import 'package:bluestacks/ui/dashboard/dashboard.dart';
-import 'package:bluestacks/utils/snackbar_util.dart';
-import 'package:bluestacks/widgets/error/error.dart';
-import 'package:bluestacks/widgets/loading/loading.dart';
+import 'package:bluestacks/widgets/error/index.dart';
+import 'package:bluestacks/widgets/loading/index.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -109,3 +103,4 @@ class _LoginScreenState extends State<LoginScreen> {
 
 
 }
+

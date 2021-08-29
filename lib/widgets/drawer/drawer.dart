@@ -1,7 +1,6 @@
 import 'package:bluestacks/providers/auth/auth_provider.dart';
 import 'package:bluestacks/providers/games/recommended_games_provider.dart';
 import 'package:bluestacks/providers/user/user_provider.dart';
-import 'package:bluestacks/ui/auth/index.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

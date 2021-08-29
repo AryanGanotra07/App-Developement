@@ -1,10 +1,6 @@
-import 'package:bluestacks/data/user_preferences.dart';
-import 'package:bluestacks/models/auth/auth.dart';
 import 'package:bluestacks/models/user/user.dart';
-import 'package:bluestacks/providers/user/user_response.dart';
-import 'package:bluestacks/providers/user/user_response_status.dart';
-import 'package:bluestacks/services/user/user_service.dart';
-import 'package:bluestacks/services/utils/exception_handler.dart';
+import 'package:bluestacks/providers/user/index.dart';
+import 'package:bluestacks/services/user/index.dart';
 import 'package:flutter/material.dart';
 
 class UserProvider extends ChangeNotifier {

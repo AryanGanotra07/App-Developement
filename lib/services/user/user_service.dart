@@ -1,12 +1,11 @@
 
 import 'dart:convert';
 
-import 'package:bluestacks/constants/service_constants.dart';
+import 'package:bluestacks/services/utils/service_constants.dart';
 import 'package:bluestacks/data/user_preferences.dart';
 import 'package:bluestacks/models/auth/auth.dart';
 import 'package:bluestacks/models/user/user.dart';
 import 'package:bluestacks/services/utils/response_handler.dart';
-import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 

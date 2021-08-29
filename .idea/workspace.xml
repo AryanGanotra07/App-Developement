@@ -20,23 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e350e90-4f68-480f-91dd-4dbffb8aa03e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/themes/app_bar_theme.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/themes/button_theme.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/themes/text_theme.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/index.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/providers/auth/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/providers/games/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/providers/user/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/services/auth/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/services/games/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/services/user/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/themes/app_bar/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/themes/button/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/themes/text/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/auth/utils/error_messages.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/error_messages.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants/service_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/utils/service_constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/user_preferences.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/user_preferences.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/games/recommended_games_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/games/recommended_games_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/user/user_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/user/user_service.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/app_bar_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_bar/app_bar_theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/themes/app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/button_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/button/button_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/text_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/text/text_theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/logo_image/logo_image.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/logo_image/logo_image.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/submit_button/submit_button.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/submit_button/submit_button.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/dashboard.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/game_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/game_card.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/recommended_games.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/recommended_games.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/user_profile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/header/header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/header/header.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/loading/loading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/loading/loading.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/password_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/password_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/username_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/username_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/drawer/drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/drawer/drawer.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +77,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lib/models/games" />
-      <recent name="$PROJECT_DIR$/lib/models/user" />
+      <recent name="$PROJECT_DIR$/lib/ui/auth/utils" />
+      <recent name="$PROJECT_DIR$/lib/ui/auth" />
       <recent name="$PROJECT_DIR$/lib/services/utils" />
-      <recent name="$PROJECT_DIR$/lib/services/user" />
-      <recent name="$PROJECT_DIR$/lib/services/games" />
+      <recent name="$PROJECT_DIR$/lib/themes/text" />
+      <recent name="$PROJECT_DIR$/lib/themes/button" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,6 +116,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="458" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1630273517362">
+      <screen x="0" y="25" width="1440" height="819" />
+    </state>
+    <state x="458" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.819@0.25.1440.819" timestamp="1630273517362" />
     <state width="1398" height="280" key="GridCell.Tab.0.bottom" timestamp="1630270799492">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
