@@ -1,8 +1,9 @@
 
 
 
-import 'package:bluestacks/models/user.dart';
-
+import 'package:bluestacks/models/auth/auth.dart';
+import 'package:bluestacks/models/user/user.dart';
+import 'package:bluestacks/services/utils/response_handler.dart';
 
 
 class AuthService {
@@ -11,17 +12,16 @@ class AuthService {
     "9876543210" : "password123",
     "9999" : "abcd",
   };
-  static Future<User> loginUser(Map<String, dynamic> userData) async {
+  static Future<AuthDetails> loginUser(Map<String, dynamic> userData) async {
 
     String username = userData["username"].toString().trim();
     String password = userData["password"].toString().trim();
 
     //false time delay returning data
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(Duration(microseconds: 600));
 
     if (_allowedUsers.containsKey(username)) {
-      print("contains");
-      if (_allowedUsers["username"].toString().trim().compareTo(password) == 1) {
+      if (_allowedUsers[username].toString().trim() == password) {
         //valid user credentials
 
         //sample response data
@@ -31,13 +31,14 @@ class AuthService {
           "accessToken" : "access_token",
           "refreshToken" : "refresh_token",
         };
-        return User.fromJson(responseData);
+        return AuthDetails.fromAuthJson(responseData);
       } else {
         //invalid user credentials
-
+        ResponseHandler.handleStatusCode(401);
       }
     } else {
       //user not found
+      ResponseHandler.handleStatusCode(401);
     }
     return null;
   }

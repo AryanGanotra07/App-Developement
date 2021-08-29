@@ -1,42 +1,98 @@
+import 'package:bluestacks/models/user/user.dart';
+import 'package:bluestacks/providers/user/user_provider.dart';
+import 'package:bluestacks/providers/user/user_response.dart';
+import 'package:bluestacks/providers/user/user_response_status.dart';
+import 'package:bluestacks/ui/dashboard/widgets/user_profile/tournaments_details.dart';
+import 'package:bluestacks/widgets/error/error.dart';
+import 'package:bluestacks/widgets/loading/loading.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 
-class UserProfile extends StatelessWidget {
+class UserProfile extends StatefulWidget {
+  @override
+  _UserProfileState createState() => _UserProfileState();
+}
+
+class _UserProfileState extends State<UserProfile> {
   @override
   Widget build(BuildContext context) {
-    return _buildUserProfileWidget();
+    return _buildUserProfileConsumerWidget();
   }
 
-  Widget _buildUserProfileWidget() {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(
-        children: [
-          _buildUserImageWidget(),
-          _buildUserDetailsWidget(),
-        ],
-      ),
+  @override
+  void initState() {
+    _fetchUserDetails();
+    super.initState();
+
+  }
+
+  void _fetchUserDetails() {
+    Provider.of<UserProvider>(context, listen: false).loadUser();
+  }
+
+  Widget _buildUserProfileConsumerWidget() {
+    return Consumer<UserProvider>(
+      builder: (context, data, child) {
+        UserResponse userResponse = data.userResponse;
+
+        switch (userResponse.status) {
+          case UserResponseStatus.Fetching:
+            return LoadingComponent();
+          case UserResponseStatus.Fetched:
+            return _buildUserProfileWidget(userResponse.user);
+          case UserResponseStatus.Error:
+            return Error(
+              errorMessage: userResponse.message,
+              onRetry: () => _fetchUserDetails(),
+            );
+        }
+        return SizedBox(
+          height: 0,
+          width: 0,
+        );
+      }
     );
+
   }
 
-  Widget _buildUserImageWidget() {
+  Widget _buildUserProfileWidget(User user) {
+  return Padding(
+  padding: const EdgeInsets.all(8.0),
+  child: Column(
+    children: [
+      Row(
+      children: [
+      _buildUserImageWidget(user),
+      _buildUserDetailsWidget(user),
+      ],
+      ),
+      TournamentsDetails(user),
+    ],
+  ),
+  );
+}
+
+  Widget _buildUserImageWidget(User user) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: new Container(
           width: 100.0,
           height: 100.0,
-          decoration: new BoxDecoration(
+          decoration:
+          new BoxDecoration(
               shape: BoxShape.circle,
-              image: new DecorationImage(
+              image:
+              new DecorationImage(
                   fit: BoxFit.fill,
                   image: new NetworkImage(
-                      "https://cdn.dribbble.com/users/1993497/screenshots/9116145/media/1f2fbabc81cd40a8b19bebbca6d7ce37.png?compress=1&resize=300x300")
+                      user.imageUrl)
               )
           )),
     );
   }
 
-  Widget _buildUserDetailsWidget() {
+  Widget _buildUserDetailsWidget(User user) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -44,19 +100,19 @@ class UserProfile extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text("Simon Bakor",
+            child: Text(user.name,
             style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
             ),),
           ),
-          _buildUserRatingWidget(),
+          _buildUserRatingWidget(user),
         ],
       ),
     );
   }
 
-  Widget _buildUserRatingWidget() {
+  Widget _buildUserRatingWidget(User user) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
@@ -72,7 +128,7 @@ class UserProfile extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal :8.0),
-                  child: Text("2250",
+                  child: Text(user.ratingValue,
                   style: TextStyle(
                     color: Colors.blue,
                     fontWeight: FontWeight.bold,
@@ -81,7 +137,7 @@ class UserProfile extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal :8.0),
-                  child: Text("Elo rating",
+                  child: Text(user.ratingKey,
                   ),
                 ),
               ],

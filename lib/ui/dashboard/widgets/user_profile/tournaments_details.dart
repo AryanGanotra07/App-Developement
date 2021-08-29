@@ -1,7 +1,11 @@
+import 'package:bluestacks/models/user/user.dart';
 import 'package:flutter/material.dart';
 
 
 class TournamentsDetails extends StatelessWidget {
+  final User user;
+  TournamentsDetails(this.user);
+
   @override
   Widget build(BuildContext context) {
     return _buildTournamentsDetailsWidget();
@@ -12,39 +16,45 @@ class TournamentsDetails extends StatelessWidget {
   }
 
   Widget _buildRowsWidget() {
+    String played = user.tournamentInfo.played.toString();
+    String won = user.tournamentInfo.won.toString();
     List<Map<String, dynamic>> data = [
       {
         "color" : Colors.orange,
         "key" : "Tournaments Played",
-        "value" : "34",
+        "value" : played,
 
       },
       {
         "color" : Colors.deepPurpleAccent,
         "key" : "Tournaments Won",
-        "value" : "09",
+        "value" : "${won.padLeft(played.length, "0")}",
       },
      {
         "color" : Colors.deepOrange,
         "key" : "Winning Percentage",
-        "value" : "26%",
+        "value" : "${((user.tournamentInfo.won / user.tournamentInfo.played) * 100).toInt()}%",
       },
     ];
     // return _buildDetailsWidget(data.elementAt(0));
     return Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: Row(
-        children: [
-          _buildDetailsWidget(data.elementAt(0), leftBorder: true),
-          _buildDetailsWidget(data.elementAt(1)),
-          _buildDetailsWidget(data.elementAt(2), rightBorder: true),
-        ],
+      padding: const EdgeInsets.all(8.0),
+      child: IntrinsicHeight(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                _buildDetailsWidget(data.elementAt(0), leftBorder: true),
+                _buildDetailsWidget(data.elementAt(1)),
+                _buildDetailsWidget(data.elementAt(2), rightBorder: true),
+              ],
+            ),
       ),
     );
   }
 
   Widget _buildDetailsWidget(Map<String, dynamic> e, {leftBorder : false, rightBorder: false}) {
-    return Flexible(
+    return Expanded(
       child: Container(
 
         decoration: _getDecoration(e["color"], leftBorder,  rightBorder),

@@ -1,7 +1,8 @@
 
 
 
-import 'package:bluestacks/models/user.dart';
+import 'package:bluestacks/models/auth/auth.dart';
+import 'package:bluestacks/models/user/user.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserPreferences {
@@ -10,14 +11,14 @@ class UserPreferences {
   static const String REFRESH_TOKEN_KEY = "refresh_token";
 
 
-  static Future<void> saveUser(User user) async {
+  static Future<void> saveUserAuth(AuthDetails userAuth) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(USER_ID_KEY, user.userId);
-    await prefs.setString(ACCESS_TOKEN_KEY, user.accessToken);
-    await prefs.setString(REFRESH_TOKEN_KEY, user.refreshToken);
+    await prefs.setInt(USER_ID_KEY, userAuth.userId);
+    await prefs.setString(ACCESS_TOKEN_KEY, userAuth.accessToken);
+    await prefs.setString(REFRESH_TOKEN_KEY, userAuth.refreshToken);
   }
 
-  static Future<User> getUser() async {
+  static Future<AuthDetails> getUser() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
     int userId = prefs.getInt(USER_ID_KEY);
@@ -31,14 +32,14 @@ class UserPreferences {
       return null;
 
     }
-    return User(
+    return AuthDetails(
         userId: userId,
         accessToken: accessToken,
         refreshToken: refreshToken,
         );
   }
 
-  void removeUser() async {
+  static Future<void> removeUser() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.remove(USER_ID_KEY);
     prefs.remove(ACCESS_TOKEN_KEY);

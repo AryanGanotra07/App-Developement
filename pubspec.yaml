@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   provider: ^6.0.0
   shared_preferences: ^2.0.7
+  http: ^0.13.3
 
 dev_dependencies:
   flutter_test:
@@ -48,6 +49,8 @@ flutter:
 
   assets:
     - assets/images/gametv.png
+    - assets/images/template.jpg
+    - assets/images/avatar.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

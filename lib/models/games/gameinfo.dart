@@ -12,7 +12,8 @@ class GameInfo {
 });
 
 
-  factory GameInfo.fromJson(Map<String, dynamic> responseData) {
+  factory GameInfo.fromJson(responseData) {
+    // responseData = responseData["data"]["tournaments"];
     return GameInfo(
       name: responseData["name"],
       coverUrl: responseData["cover_url"],

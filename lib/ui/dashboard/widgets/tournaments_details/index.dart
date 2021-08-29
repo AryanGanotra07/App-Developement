@@ -1,1 +1,0 @@
-export 'tournaments_details.dart';

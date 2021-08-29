@@ -1,7 +1,12 @@
+import 'package:bluestacks/models/games/gameinfo.dart';
 import 'package:flutter/material.dart';
 
 
+
 class GameCard extends StatelessWidget {
+  final GameInfo gameInfo;
+  GameCard(this.gameInfo);
+
   @override
   Widget build(BuildContext context) {
     return _buildGameCard();
@@ -10,25 +15,25 @@ class GameCard extends StatelessWidget {
   Widget _buildGameCard() {
     return Container(
       margin: EdgeInsets.only(bottom: 8.0),
-     child : Column(
-            children: [
-              _buildGameImage(),
-
-
-            ],
-        ),
+      decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.transparent,
+          ),
+          borderRadius: BorderRadius.horizontal(left: Radius.circular(20.0))),
+     height: 200,
+     child : _buildGameComponentWidget(),
     );
   }
 
-  Widget _buildGameImage() {
+  Widget _buildGameComponentWidget() {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20.0),
       child: Stack(
           children : [
-            Padding(
-              padding: const EdgeInsets.only(bottom: 8.0),
-              child: Image.network('https://wallpapercave.com/wp/wp8769243.jpg'),
-            ),
+            FadeInImage.assetNetwork(
+                placeholder: 'assets/images/template.jpg',
+                image :gameInfo.coverUrl, fit: BoxFit.fitWidth, width: double.infinity,),
+
       Positioned.fill(
 
           child: Align(
@@ -36,11 +41,11 @@ class GameCard extends StatelessWidget {
               child: ListTile(
                 tileColor: Colors.white,
                 title: Text(
-                  "Fortnite Champions Mar 2020 Team Game",
+                  gameInfo.name,
                   overflow: TextOverflow.ellipsis,
                 ),
                 subtitle: Text(
-                  "Fortnite"
+                  gameInfo.gameName
                 ),
                 trailing: IconButton(
                   icon: Icon(

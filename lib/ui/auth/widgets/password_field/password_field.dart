@@ -20,7 +20,10 @@ class _PasswordFieldState extends State<PasswordField> {
 
   @override
   Widget build(BuildContext context) {
-    return _buildPasswordField();
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: _buildPasswordField(),
+    );
   }
 
   Widget _buildPasswordField() {
@@ -31,6 +34,7 @@ class _PasswordFieldState extends State<PasswordField> {
       decoration: InputDecoration(
         labelText: 'Password',
         suffixIcon: _buildTogglePasswordVisibilityButton(),
+        filled: true,
       ),
     );
   }

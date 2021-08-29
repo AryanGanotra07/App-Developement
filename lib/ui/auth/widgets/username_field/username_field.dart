@@ -6,7 +6,10 @@ class UsernameField extends StatelessWidget {
   UsernameField(this.usernameController);
   @override
   Widget build(BuildContext context) {
-    return _buildUsernameField();
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: _buildUsernameField(),
+    );
   }
 
   Widget _buildUsernameField() {
@@ -15,7 +18,8 @@ class UsernameField extends StatelessWidget {
       validator: _usernameValidator,
       keyboardType: TextInputType.phone,
       decoration: InputDecoration(
-          labelText: 'Phone'
+          labelText: 'Phone',
+          filled: true,
       ),
     );
   }

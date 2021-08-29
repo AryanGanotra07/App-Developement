@@ -1,11 +1,12 @@
+import 'package:bluestacks/providers/games/recommended_games_provider.dart';
 import 'package:bluestacks/routes.dart';
 import 'package:bluestacks/themes/index.dart';
 
-import 'providers/auth_provider.dart';
+import 'providers/auth/auth_provider.dart';
 import 'ui/home.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'providers/user_provider.dart';
+import 'providers/user/user_provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
         providers: [
+          ChangeNotifierProvider(create: (_) => RecommendedGamesProvider()),
           ChangeNotifierProvider(create: (_) => AuthProvider()),
           ChangeNotifierProvider(create: (_) => UserProvider()),
         ],
