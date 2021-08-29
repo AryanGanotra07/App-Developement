@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 
 class LoadingComponent extends StatelessWidget {
-  double height;
+  final double height;
   LoadingComponent({this.height = 200});
   @override
   Widget build(BuildContext context) {

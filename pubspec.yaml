@@ -51,6 +51,7 @@ flutter:
     - assets/images/gametv.png
     - assets/images/template.jpg
     - assets/images/avatar.png
+    - assets/images/drawericon.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

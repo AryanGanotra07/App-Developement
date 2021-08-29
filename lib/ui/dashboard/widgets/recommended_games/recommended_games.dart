@@ -2,7 +2,6 @@ import 'package:bluestacks/models/games/gameinfo.dart';
 import 'package:bluestacks/providers/games/game_response.dart';
 import 'package:bluestacks/providers/games/game_response_status.dart';
 import 'package:bluestacks/providers/games/recommended_games_provider.dart';
-import 'package:bluestacks/services/games/recommended_games_service.dart';
 import 'package:bluestacks/ui/dashboard/widgets/recommended_games/game_card.dart';
 import 'package:bluestacks/widgets/error/index.dart';
 import 'package:bluestacks/widgets/loading/loading.dart';
@@ -44,15 +43,9 @@ class _RecommendedGamesState extends State<RecommendedGames> {
   }
 
 
-  double _prevMaxScrollExtend = 0;
   void pagination() {
     double currentScrollExtent = widget._scrollController.position.pixels;
     double currentMaxScrollExtend = widget._scrollController.position.maxScrollExtent;
-    // if ( currentScrollExtent >= _prevMaxScrollExtend + (currentMaxScrollExtend - _prevMaxScrollExtend) / 2.5 ) {
-    //     _prevMaxScrollExtend = currentMaxScrollExtend;
-    //     Provider.of<RecommendedGamesProvider>(context, listen: false).loadMore();
-    //
-    // }
     if (currentScrollExtent == currentMaxScrollExtend) {
       Provider.of<RecommendedGamesProvider>(context, listen: false).loadMore();
     }
@@ -83,8 +76,6 @@ class _RecommendedGamesState extends State<RecommendedGames> {
       builder: (context, data, child) {
         GameResponse gamesInfo = data.response;
         switch(gamesInfo.status) {
-          // case GameResponseStatus.Fetching:
-          //   return LoadingComponent();
           case GameResponseStatus.Fetched:
             return _buildGamesListWidget(gamesInfo.games);
           case GameResponseStatus.Error:
@@ -94,24 +85,11 @@ class _RecommendedGamesState extends State<RecommendedGames> {
             );
           default:
             return LoadingComponent();
-
         }
       },
     );
   }
 
-  Widget _buildScrollNotifierWidget(List<GameInfo> gamesInfo) {
-    return NotificationListener<ScrollNotification>(
-      onNotification: (ScrollNotification scrollInfo) {
-        if (scrollInfo is ScrollEndNotification &&
-            scrollInfo.metrics.extentAfter == 0) {
-          return true;
-        }
-        return false;
-      },
-      child: _buildGamesListWidget(gamesInfo),
-    );
-  }
 
   Widget _buildGamesListWidget(List<GameInfo> gamesInfo) {
     return Padding(

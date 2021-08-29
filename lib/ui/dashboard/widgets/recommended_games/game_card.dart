@@ -13,7 +13,6 @@ class GameCard extends StatelessWidget {
   }
 
   Widget _buildGameCard(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
     return Container(
       margin: EdgeInsets.only(bottom: 8.0),
       decoration: BoxDecoration(
@@ -34,7 +33,6 @@ class GameCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(bottom : 1.0),
               child: Image.network(
-                  // placeholder: 'assets/images/template.jpg',
                   gameInfo.coverUrl, fit: BoxFit.fitWidth, width: double.infinity,),
             ),
 

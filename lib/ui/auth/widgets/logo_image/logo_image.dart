@@ -13,8 +13,9 @@ class LogoImage extends StatelessWidget {
   Widget _buildLogoImage() {
     return Image.asset(
       "assets/images/gametv.png",
-      height: 100,
-      width: 100,
+      fit: BoxFit.contain,
+      height: 120,
+      width: 120,
     );
   }
   

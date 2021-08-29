@@ -30,7 +30,6 @@ class _UserProfileState extends State<UserProfile> {
   void _fetchUserDetails({forcefully :false}) {
     Provider.of<UserProvider>(context, listen: false).loadUser(forcefully: forcefully);
     setState(() {
-
     });
   }
 
@@ -42,8 +41,6 @@ class _UserProfileState extends State<UserProfile> {
         UserResponse userResponse = data.userResponse;
 
         switch (userResponse.status) {
-          // case UserResponseStatus.Fetching:
-          //   return LoadingComponent();
           case UserResponseStatus.Fetched:
             return _buildUserProfileWidget(userResponse.user);
           case UserResponseStatus.Error:
@@ -54,10 +51,6 @@ class _UserProfileState extends State<UserProfile> {
           default:
             return LoadingComponent();
         }
-        return SizedBox(
-          height: 0,
-          width: 0,
-        );
       }
     );
 

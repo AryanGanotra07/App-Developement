@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 
 class SubmitButton extends StatelessWidget {
   final Function onSubmit;
-  final bool valid;
-  SubmitButton(this.onSubmit, this.valid);
+  SubmitButton(this.onSubmit);
   @override
   Widget build(BuildContext context) {
     return Padding(

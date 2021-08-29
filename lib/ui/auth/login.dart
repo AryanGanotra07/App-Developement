@@ -23,7 +23,6 @@ class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  bool _valid = true;
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
               children: <Widget>[
                 LogoImage(),
                 _buildLoginForm(),
-                SubmitButton(_onSubmit, _valid),
+                SubmitButton(_onSubmit),
                 _buildConsumerForAuthenticationState(),
               ],
             ),
@@ -91,14 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _onSubmit() {
     if (_formKey.currentState.validate()) {
-      setState(() {
-        _valid = true;
-      });
       _loginUser();
-    } else {
-      setState(() {
-        _valid = false;
-      });
     }
   }
 
@@ -113,21 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
     AuthProvider auth = Provider.of<AuthProvider>(context, listen: false);
     auth.loginUser(userCredentials);
 
-    // _handleLoginFlow(authMessage);
   }
 
-  void _handleLoginFlow(Map<String, dynamic> authMessage) {
-    if (authMessage["successful"]) {
-      // //login successful
-      // User user = authMessage["user"];
-      // // UserProvider userProvider = Provider.of<UserProvider>(context, listen: false);
-      // // userProvider.setUser(user);
-      // Navigator.of(context).pushReplacementNamed(DashboardScreen.route);
-
-    } else {
-      //login unsuccessful
-      SnackBarUtil.showSnackBar(context, authMessage["error"]);
-    }
-  }
 
 }

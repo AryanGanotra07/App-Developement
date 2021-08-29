@@ -14,14 +14,19 @@ class Header extends StatelessWidget {
     return SliverAppBar(
       floating: true,
       title: Text("Flyingwolf"),
-      leading: IconButton(
-          icon: Icon(
-            Icons.bar_chart
-          ),
-        onPressed: () {
-            _onDrawerIconPressed(context);
-        },
-          ),
+      leading: _buildDawerIcon(context),
+    );
+  }
+
+  Widget _buildDawerIcon(BuildContext context) {
+    return InkWell(
+      onTap: () => _onDrawerIconPressed(context),
+      child: Padding(
+        padding: const EdgeInsets.all(12.0),
+        child: Image.asset(
+          "assets/images/drawericon.png"
+        ),
+      ),
     );
   }
 
