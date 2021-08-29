@@ -1,7 +1,7 @@
 
 
-import 'package:bluestacks/models/games/gameinfo.dart';
-import 'package:bluestacks/providers/games/game_response_status.dart';
+import '../../models/games/index.dart';
+import 'game_response_status.dart';
 
 class GameResponse {
   GameResponseStatus status;

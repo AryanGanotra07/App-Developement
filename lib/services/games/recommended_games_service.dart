@@ -1,9 +1,8 @@
-import 'dart:convert';
-
-import 'package:bluestacks/services/utils/response_handler.dart';
 import 'package:http/http.dart' as http;
+import 'dart:convert';
+import '../../models/games/index.dart';
+import '../utils/response_handler.dart';
 import '../utils/service_constants.dart';
-import '../../models/games/gameinfo.dart';
 
 class RecommendedGamesService {
   static Future<Map<String, dynamic>> fetchRecommendedGames(String cursor) async {

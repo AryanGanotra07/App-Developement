@@ -1,7 +1,7 @@
-import 'package:bluestacks/providers/auth/auth_provider.dart';
-import 'package:bluestacks/services/utils/exception_handler.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../../providers/auth/auth_provider.dart';
+import '../../services/utils/exception_handler.dart';
 
 
 class Error extends StatefulWidget {

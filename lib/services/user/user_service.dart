@@ -1,12 +1,10 @@
-
-import 'dart:convert';
-
-import 'package:bluestacks/services/utils/service_constants.dart';
-import 'package:bluestacks/data/user_preferences.dart';
-import 'package:bluestacks/models/auth/auth.dart';
-import 'package:bluestacks/models/user/user.dart';
-import 'package:bluestacks/services/utils/response_handler.dart';
 import 'package:http/http.dart' as http;
+import 'dart:convert';
+import '../../data/user/index.dart';
+import '../../models/auth/index.dart';
+import '../../models/user/index.dart';
+import '../../services/utils/response_handler.dart';
+import '../utils/service_constants.dart';
 
 
 class UserService {

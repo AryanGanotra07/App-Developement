@@ -1,12 +1,10 @@
-import 'package:bluestacks/models/games/gameinfo.dart';
-import 'package:bluestacks/providers/games/game_response.dart';
-import 'package:bluestacks/providers/games/game_response_status.dart';
-import 'package:bluestacks/providers/games/recommended_games_provider.dart';
-import 'package:bluestacks/ui/dashboard/widgets/recommended_games/game_card.dart';
-import 'package:bluestacks/widgets/error/index.dart';
-import 'package:bluestacks/widgets/loading/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../../../../models/games/index.dart';
+import '../../../../providers/games/index.dart';
+import '../../../../widgets/error/index.dart';
+import '../../../../widgets/loading/loading.dart';
+import 'game_card.dart';
 
 
 class RecommendedGames extends StatefulWidget {

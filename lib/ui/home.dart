@@ -1,8 +1,8 @@
-import 'package:bluestacks/providers/auth/index.dart';
-import 'package:bluestacks/ui/dashboard/index.dart';
-import 'package:bluestacks/ui/splash/index.js.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../providers/auth/index.dart';
+import 'dashboard/index.dart';
+import 'splash/index.js.dart';
 import 'auth/index.dart';
 
 

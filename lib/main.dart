@@ -1,12 +1,11 @@
-import 'package:bluestacks/providers/games/recommended_games_provider.dart';
-import 'package:bluestacks/routes.dart';
-import 'package:bluestacks/themes/index.dart';
-
-import 'providers/auth/auth_provider.dart';
-import 'ui/home.dart';
 import 'package:flutter/material.dart';
+import 'routes.dart';
+import 'themes/index.dart';
+import 'ui/home.dart';
 import 'package:provider/provider.dart';
-import 'providers/user/user_provider.dart';
+import 'providers/games/index.dart';
+import 'providers/user/index.dart';
+import 'providers/auth/index.dart';
 
 void main() {
   runApp(MyApp());

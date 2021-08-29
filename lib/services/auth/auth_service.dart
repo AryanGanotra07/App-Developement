@@ -1,5 +1,5 @@
-import 'package:bluestacks/models/auth/auth.dart';
-import 'package:bluestacks/services/utils/response_handler.dart';
+import '../../models/auth/auth.dart';
+import '../utils/response_handler.dart';
 
 
 class AuthService {

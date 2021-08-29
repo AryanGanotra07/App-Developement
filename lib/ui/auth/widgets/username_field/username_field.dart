@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bluestacks/ui/auth/utils/error_messages.dart';
+import '../../utils/error_messages.dart';
 
 class UsernameField extends StatelessWidget {
   final TextEditingController usernameController;

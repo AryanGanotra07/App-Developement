@@ -20,31 +20,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e350e90-4f68-480f-91dd-4dbffb8aa03e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/providers/auth/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/games/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/providers/user/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/auth/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/games/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/user/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/themes/app_bar/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/themes/button/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/themes/text/index.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ui/auth/utils/error_messages.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/auth/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/games/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/models/user/index.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/providers/index.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/error_messages.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/constants/service_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/utils/service_constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/user_preferences.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/user_preferences.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/auth/auth_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/auth/auth_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/games/game_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/games/game_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/games/recommended_games_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/games/recommended_games_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/user/user_provider.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/user/user_provider.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/providers/user/user_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/providers/user/user_response.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/auth/auth_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/auth/auth_service.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/games/recommended_games_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/games/recommended_games_service.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/services/user/user_service.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/user/user_service.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/themes/app_bar_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_bar/app_bar_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/utils/response_handler.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/utils/response_handler.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/services/utils/service_constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/utils/service_constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/app_bar/app_bar_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_bar/app_bar_theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/themes/app_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/app_theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/themes/button_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/button/button_theme.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/themes/text_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/text/text_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/button/button_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/button/button_theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/themes/text/text_theme.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/themes/text/text_theme.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/login.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/password_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/password_field/password_field.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/username_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/auth/widgets/username_field/username_field.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/dashboard.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/dashboard.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/game_card.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/game_card.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/recommended_games.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/recommended_games/recommended_games.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/tournaments_details.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/tournaments_details.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/user_profile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/dashboard/widgets/user_profile/user_profile.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ui/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ui/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/snackbar_util.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/snackbar_util.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/widgets/drawer/drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/drawer/drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/error/error.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/error/error.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/loading/loading.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/loading/loading.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +78,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
@@ -120,25 +128,25 @@
       <screen x="0" y="25" width="1440" height="819" />
     </state>
     <state x="458" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1440.819@0.25.1440.819" timestamp="1630273517362" />
-    <state width="1398" height="280" key="GridCell.Tab.0.bottom" timestamp="1630270799492">
+    <state width="1398" height="280" key="GridCell.Tab.0.bottom" timestamp="1630273647454">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state width="1398" height="280" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1630270799492" />
+    <state width="1398" height="280" key="GridCell.Tab.0.bottom/0.25.1440.819@0.25.1440.819" timestamp="1630273647454" />
     <state width="1398" height="205" key="GridCell.Tab.0.bottom/0.25.1440.820@0.25.1440.820" timestamp="1630134025884" />
-    <state width="1398" height="280" key="GridCell.Tab.0.center" timestamp="1630270799491">
+    <state width="1398" height="280" key="GridCell.Tab.0.center" timestamp="1630273647453">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state width="1398" height="280" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1630270799491" />
+    <state width="1398" height="280" key="GridCell.Tab.0.center/0.25.1440.819@0.25.1440.819" timestamp="1630273647453" />
     <state width="1398" height="205" key="GridCell.Tab.0.center/0.25.1440.820@0.25.1440.820" timestamp="1630134025884" />
-    <state width="1398" height="280" key="GridCell.Tab.0.left" timestamp="1630270799490">
+    <state width="1398" height="280" key="GridCell.Tab.0.left" timestamp="1630273647453">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state width="1398" height="280" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1630270799490" />
+    <state width="1398" height="280" key="GridCell.Tab.0.left/0.25.1440.819@0.25.1440.819" timestamp="1630273647453" />
     <state width="1398" height="205" key="GridCell.Tab.0.left/0.25.1440.820@0.25.1440.820" timestamp="1630134025884" />
-    <state width="1398" height="280" key="GridCell.Tab.0.right" timestamp="1630270799491">
+    <state width="1398" height="280" key="GridCell.Tab.0.right" timestamp="1630273647454">
       <screen x="0" y="25" width="1440" height="819" />
     </state>
-    <state width="1398" height="280" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1630270799491" />
+    <state width="1398" height="280" key="GridCell.Tab.0.right/0.25.1440.819@0.25.1440.819" timestamp="1630273647454" />
     <state width="1398" height="205" key="GridCell.Tab.0.right/0.25.1440.820@0.25.1440.820" timestamp="1630134025884" />
     <state x="385" y="168" width="670" height="676" key="search.everywhere.popup" timestamp="1630241616018">
       <screen x="0" y="25" width="1440" height="819" />

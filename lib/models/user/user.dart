@@ -1,9 +1,6 @@
-
-
-import 'package:bluestacks/models/user/tournament_info.dart';
+import 'tournament_info.dart';
 
 class User {
-
   int userId;
   String name;
   String email;
@@ -13,18 +10,15 @@ class User {
   String imageUrl;
   TournamentInfo tournamentInfo;
 
-  User({
-    this.userId,
-    this.name,
-    this.email,
-    this.phone,
-
-    this.ratingKey,
-    this.ratingValue,
-    this.imageUrl,
-    this.tournamentInfo
-  });
-
+  User(
+      {this.userId,
+      this.name,
+      this.email,
+      this.phone,
+      this.ratingKey,
+      this.ratingValue,
+      this.imageUrl,
+      this.tournamentInfo});
 
   factory User.fromDetailsJson(Map<String, dynamic> responseData) {
     return new User(

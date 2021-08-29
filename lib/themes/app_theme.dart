@@ -1,9 +1,8 @@
-
-
-import 'package:bluestacks/themes/app_bar/app_bar_theme.dart';
-import 'package:bluestacks/themes/button/button_theme.dart';
-import 'package:bluestacks/themes/text/text_theme.dart';
 import 'package:flutter/material.dart';
+import 'app_bar/index.dart';
+import 'button/index.dart';
+import 'text/index.dart';
+
 
 
 class CustomTheme {

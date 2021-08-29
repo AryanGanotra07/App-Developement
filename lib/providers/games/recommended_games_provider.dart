@@ -1,9 +1,10 @@
-import 'package:bluestacks/models/games/gameinfo.dart';
-import 'package:bluestacks/providers/games/game_response.dart';
-import 'package:bluestacks/providers/games/game_response_status.dart';
-import 'package:bluestacks/services/games/recommended_games_service.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../../models/games/index.dart';
+import '../../services/games/index.dart';
+import 'game_response.dart';
+import 'game_response_status.dart';
+
+
 class RecommendedGamesProvider extends ChangeNotifier {
   GameResponse _response = new GameResponse(
     status: GameResponseStatus.NotFetching,

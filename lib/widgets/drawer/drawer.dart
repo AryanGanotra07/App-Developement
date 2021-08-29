@@ -1,8 +1,9 @@
-import 'package:bluestacks/providers/auth/auth_provider.dart';
-import 'package:bluestacks/providers/games/recommended_games_provider.dart';
-import 'package:bluestacks/providers/user/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../../providers/auth/index.dart';
+import '../../providers/games/index.dart';
+import '../../providers/user/index.dart';
+
 
 
 class CustomDrawer extends StatelessWidget {

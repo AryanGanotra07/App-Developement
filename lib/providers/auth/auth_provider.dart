@@ -1,9 +1,11 @@
-import 'package:bluestacks/data/user_preferences.dart';
-import 'package:bluestacks/models/auth/auth.dart';
-import 'package:bluestacks/providers/auth/auth_response.dart';
-import 'package:bluestacks/providers/auth/auth_response_status.dart';
-import 'package:bluestacks/services/auth/auth_service.dart';
 import 'package:flutter/material.dart';
+import '../../data/user/user_preferences.dart';
+import '../../models/auth/index.dart';
+import '../../services/auth/index.dart';
+import 'auth_response.dart';
+import 'auth_response_status.dart';
+
+
 
 
 

@@ -1,13 +1,10 @@
-import 'package:bluestacks/models/user/user.dart';
-import 'package:bluestacks/providers/user/user_provider.dart';
-import 'package:bluestacks/providers/user/user_response.dart';
-import 'package:bluestacks/providers/user/user_response_status.dart';
-import 'package:bluestacks/ui/dashboard/widgets/user_profile/tournaments_details.dart';
-import 'package:bluestacks/widgets/error/error.dart';
-import 'package:bluestacks/widgets/loading/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
+import '../../../../models/user/index.dart';
+import '../../../../providers/user/index.dart';
+import '../../../../widgets/error/error.dart';
+import '../../../../widgets/loading/loading.dart';
+import 'tournaments_details.dart';
 
 class UserProfile extends StatefulWidget {
   @override

@@ -1,7 +1,8 @@
-import 'package:bluestacks/ui/dashboard/widgets/index.dart';
-import 'package:bluestacks/widgets/drawer/index.dart';
-import 'package:bluestacks/widgets/header/index.dart';
 import 'package:flutter/material.dart';
+import 'widgets/index.dart';
+import '../../widgets/drawer/index.dart';
+import '../../widgets/header/index.dart';
+
 
 
 

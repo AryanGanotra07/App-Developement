@@ -1,7 +1,7 @@
 
 
-import 'package:bluestacks/models/user/user.dart';
-import 'package:bluestacks/providers/user/user_response_status.dart';
+import '../../models/user/user.dart';
+import 'user_response_status.dart';
 
 class UserResponse {
   UserResponseStatus status;

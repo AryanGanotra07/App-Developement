@@ -1,5 +1,6 @@
-import 'package:bluestacks/models/user/user.dart';
 import 'package:flutter/material.dart';
+import '../../../../models/user/index.dart';
+
 
 
 class TournamentsDetails extends StatelessWidget {

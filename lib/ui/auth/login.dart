@@ -1,9 +1,9 @@
-import 'package:bluestacks/providers/auth/index.dart';
-import 'package:bluestacks/ui/auth/widgets/index.dart';
-import 'package:bluestacks/widgets/error/index.dart';
-import 'package:bluestacks/widgets/loading/index.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../../providers/auth/index.dart';
+import '../../widgets/error/index.dart';
+import '../../widgets/loading/index.dart';
+import 'widgets/index.dart';
 
 
 class LoginScreen extends StatefulWidget {

@@ -1,7 +1,7 @@
 
 
-import 'package:bluestacks/models/auth/auth.dart';
-import 'package:bluestacks/providers/auth/auth_response_status.dart';
+import '../../models/auth/auth.dart';
+import 'auth_response_status.dart';
 
 class AuthResponse {
   Exception exception;
