@@ -33,7 +33,7 @@ Please keep the code as clean and readable as you can.
 **2. Home screen:**
 This will hold some information related to the logged in user, along with a few tournament cards. Please follow the design as closely as possible:
 
-<img src="./app-dev-assignment.png" height=417 width=237/>
+<img src="./screenshots/app-dev-assignment.png" height=417 width=237/>
 
 
   a. API:
@@ -76,9 +76,9 @@ This will hold some information related to the logged in user, along with a few 
 
 ### Snapshots
 
-<img src="./screenshots/screenshot1" height=417 width=192/>
-<img src="./screenshots/screenshot2" height=417 width=192/>
-<img src="./screenshots/screenshot3" height=417 width=192/>
+<img src="./screenshots/screenshot1.jpg" height=417 width=192/>
+<img src="./screenshots/screenshot2.jpg" height=417 width=192/>
+<img src="./screenshots/screenshot3.jpg" height=417 width=192/>
 
 
 
