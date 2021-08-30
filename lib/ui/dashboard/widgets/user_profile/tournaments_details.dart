@@ -6,9 +6,10 @@ class TournamentsDetails extends StatelessWidget {
   final User user;
 
   TournamentsDetails(this.user);
-
+  ThemeData _themeData;
   @override
   Widget build(BuildContext context) {
+    _themeData = Theme.of(context);
     return _buildTournamentsDetailsWidget();
   }
 
@@ -66,10 +67,8 @@ class TournamentsDetails extends StatelessWidget {
               Text(
                 e["value"],
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: _themeData.textTheme.headline5.copyWith(
                   color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 22,
                 ),
               ),
               Text(

@@ -56,9 +56,10 @@ class _ErrorState extends State<Error> {
                   ? Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: ElevatedButton(
-                          onPressed: widget.onRetry, child: Text("Retry")),
+                          onPressed: widget.onRetry,
+                          child: const Text("Retry")),
                     )
-                  : SizedBox(
+                  : const SizedBox(
                       width: 0,
                       height: 0,
                     ),

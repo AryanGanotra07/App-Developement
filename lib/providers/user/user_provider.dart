@@ -26,10 +26,8 @@ class UserProvider extends ChangeNotifier {
     _response = UserResponse(status: UserResponseStatus.NotFetching);
   }
 
-  void _setFetching({notify: false}) {
+  void _setFetching() {
     _response.status = UserResponseStatus.Fetching;
-    // if (notify)
-    //   notifyListeners();
   }
 
   Future<void> loadUser({forcefully: false}) async {
@@ -38,7 +36,7 @@ class UserProvider extends ChangeNotifier {
       return;
     }
     if ((_response.status != UserResponseStatus.Error) || forcefully) {
-      _setFetching(notify: true);
+      _setFetching();
       try {
         User userFromNetwork = await UserService.getUserDetails();
         _setUser(userFromNetwork);

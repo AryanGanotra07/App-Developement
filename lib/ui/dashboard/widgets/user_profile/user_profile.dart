@@ -13,8 +13,10 @@ class UserProfile extends StatefulWidget {
 }
 
 class _UserProfileState extends State<UserProfile> {
+  ThemeData _themeData;
   @override
   Widget build(BuildContext context) {
+    _themeData = Theme.of(context);
     return _buildUserProfileConsumerWidget();
   }
 
@@ -88,10 +90,7 @@ class _UserProfileState extends State<UserProfile> {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               user.name,
-              style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-              ),
+              style: _themeData.textTheme.headline5,
             ),
           ),
           _buildUserRatingWidget(user),
@@ -117,9 +116,8 @@ class _UserProfileState extends State<UserProfile> {
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Text(
                   user.ratingValue,
-                  style: TextStyle(
+                  style: _themeData.textTheme.headline5.copyWith(
                     color: Colors.blue,
-                    fontWeight: FontWeight.bold,
                     fontSize: 20,
                   ),
                 ),

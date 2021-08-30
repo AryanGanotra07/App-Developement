@@ -36,7 +36,6 @@ class _PasswordFieldState extends State<PasswordField> {
       decoration: InputDecoration(
         labelText: 'Password',
         suffixIcon: _buildTogglePasswordVisibilityButton(),
-        filled: true,
       ),
     );
   }

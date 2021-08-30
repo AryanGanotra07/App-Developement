@@ -20,9 +20,8 @@ class UsernameField extends StatelessWidget {
       controller: usernameController,
       validator: _usernameValidator,
       keyboardType: TextInputType.phone,
-      decoration: InputDecoration(
+      decoration: const InputDecoration(
         labelText: 'Phone',
-        filled: true,
       ),
     );
   }

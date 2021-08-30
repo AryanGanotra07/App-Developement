@@ -17,6 +17,7 @@ class RecommendedGames extends StatefulWidget {
 }
 
 class _RecommendedGamesState extends State<RecommendedGames> {
+  ThemeData _themeData;
   @override
   void initState() {
     widget._scrollController.addListener(pagination);
@@ -46,6 +47,7 @@ class _RecommendedGamesState extends State<RecommendedGames> {
 
   @override
   Widget build(BuildContext context) {
+    _themeData = Theme.of(context);
     return _buildRecommendedGamesWidget();
   }
 
@@ -113,10 +115,7 @@ class _RecommendedGamesState extends State<RecommendedGames> {
       ),
       child: Text(
         "Recommended for you",
-        style: TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 22,
-        ),
+        style: _themeData.textTheme.headline5,
       ),
     );
   }

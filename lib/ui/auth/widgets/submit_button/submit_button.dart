@@ -14,6 +14,6 @@ class SubmitButton extends StatelessWidget {
   }
 
   Widget _buildSubmitButton() {
-    return new ElevatedButton(child: Text("Login"), onPressed: onSubmit);
+    return new ElevatedButton(child: const Text("Login"), onPressed: onSubmit);
   }
 }

@@ -14,6 +14,6 @@ class LoadingComponent extends StatelessWidget {
     return Container(
         height: height,
         alignment: Alignment.center,
-        child: CircularProgressIndicator());
+        child: const CircularProgressIndicator());
   }
 }

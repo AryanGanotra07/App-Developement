@@ -60,7 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
             height: null,
           );
         default:
-          return SizedBox(
+          return const SizedBox(
             width: 0,
             height: 0,
           );

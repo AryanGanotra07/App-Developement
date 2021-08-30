@@ -13,7 +13,7 @@ class Header extends StatelessWidget {
   Widget _buildHeader(BuildContext context) {
     return SliverAppBar(
       floating: true,
-      title: Text("Flyingwolf"),
+      title: const Text("Flyingwolf"),
       leading: _buildDawerIcon(context),
     );
   }
