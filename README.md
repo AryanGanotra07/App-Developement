@@ -59,6 +59,10 @@ This will hold some information related to the logged in user, along with a few 
     ( Familiar with flask for backend)
 
 ## Project Details
+### Login Details
+    - User 1: 9898989898 / password123
+    - User 2: 9876543210 / password123
+
 ### Folder Structure
 
     .

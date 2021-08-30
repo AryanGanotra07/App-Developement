@@ -2,10 +2,15 @@ import '../../models/auth/auth.dart';
 import '../utils/response_handler.dart';
 
 class AuthService {
-  static Map<String, dynamic> _allowedUsers = {
-    "9898989898": "password123",
-    "9876543210": "password123",
-    "9999": "abcd",
+  static Map<String, Map<String, dynamic>> _allowedUsers = {
+    "9898989898": {
+      "id" : 1,
+      "password" : "password123",
+    },
+    "9876543210": {
+      "id" : 2,
+      "password" : "password123",
+    },
   };
 
   static Future<AuthDetails> loginUser(Map<String, dynamic> userData) async {
@@ -16,12 +21,13 @@ class AuthService {
     await Future.delayed(Duration(microseconds: 600));
 
     if (_allowedUsers.containsKey(username)) {
-      if (_allowedUsers[username].toString().trim() == password) {
+      Map<String, dynamic> userMap = _allowedUsers[username];
+      if (userMap["password"].toString().trim() == password) {
         //valid user credentials
 
         //sample response data
         Map<String, dynamic> responseData = {
-          "userId": 1,
+          "userId": userMap["id"],
           "phone": username,
           "accessToken": "access_token",
           "refreshToken": "refresh_token",
