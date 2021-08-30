@@ -1,7 +1,35 @@
 # app-developer-assignment
 Assignment for app developers
 
+## Project Details
 
+### Login Details
+    - User 1: 9898989898 / password123
+    - User 2: 9876543210 / password123
+
+### Folder Structure
+
+    .
+    ├── data                    # Data sources (local storage / shared preferences)
+    ├── models                  # Data model classes (user, game)
+    ├── ui                      # App screens (Login, Dashboard, Splash)
+    ├── widgets                 # Project level widgets / components (sometimes, reusable)
+    ├── services                # Network calls / Data fetch configurations
+    ├── providers               # State management configurations (UserProvider, GameProvider etc)
+    ├── utils                   # Project level utilities / helper functions
+    ├── themes                  # Custom app themes for button, text etc.
+    ├── main.dart               # Entry program for the project
+    ├── routes.dart             # Routes for UI Screens
+    └── README.md
+
+### Snapshots
+
+<img src="./screenshots/screenshot1.jpg" height=417 width=192/>
+<img src="./screenshots/screenshot2.jpg" height=417 width=192/>
+<img src="./screenshots/screenshot3.jpg" height=417 width=192/>
+
+
+## Assignment Problem
 
 You need to create a Flutter app containing 2 screen as per specifications given below. Once you are done, please share the following:
 1. URL of the source code uploaded to github
@@ -58,31 +86,7 @@ This will hold some information related to the logged in user, along with a few 
     in any backend language/framework e.g flask microframework, Spring Boot, NodeJs.\
     ( Familiar with flask for backend)
 
-## Project Details
-### Login Details
-    - User 1: 9898989898 / password123
-    - User 2: 9876543210 / password123
 
-### Folder Structure
-
-    .
-    ├── data                    # Data sources (local storage / shared preferences)
-    ├── models                  # Data model classes (user, game)
-    ├── ui                      # App screens (Login, Dashboard, Splash)
-    ├── widgets                 # Project level widgets / components (sometimes, reusable)
-    ├── services                # Network calls / Data fetch configurations
-    ├── providers               # State management configurations (UserProvider, GameProvider etc)
-    ├── utils                   # Project level utilities / helper functions
-    ├── themes                  # Custom app themes for button, text etc.
-    ├── main.dart               # Entry program for the project
-    ├── routes.dart             # Routes for UI Screens
-    └── README.md
-
-### Snapshots
-
-<img src="./screenshots/screenshot1.jpg" height=417 width=192/>
-<img src="./screenshots/screenshot2.jpg" height=417 width=192/>
-<img src="./screenshots/screenshot3.jpg" height=417 width=192/>
 
 
 
